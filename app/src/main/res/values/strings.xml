@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Baskara</string>
+    <string name="termoA">Primeiro termo(x²)</string>
+    <string name="termoB">Segundo termo(x)</string>
+    <string name="termoC">Terceiro termo</string>
+    <string name="buttonCalcularText">Calcular</string>
+</resources>

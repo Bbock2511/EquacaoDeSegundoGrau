@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/termA"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/termoA"
+        android:padding="10dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/termB"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/termoB"
+        android:padding="10dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termA"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/termC"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/termoC"
+        android:padding="10dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termB"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCalcular"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:text="@string/buttonCalcularText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termC"
+        app:layout_constraintVertical_bias="0.235"
+        android:background="@drawable/background_button"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resultXI"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalcular"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resultXII"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toEndOf="@+id/resultXI"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalcular"
+        app:layout_constraintVertical_bias="0.335" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
